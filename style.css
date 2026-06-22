@@ -1,27 +1,27 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #0b0f0e;
-  color: #e6e6e6;
+  background: #0a0f0d;
+  color: #e7ecea;
   line-height: 1.6;
 }
 
-.topbar {
+.header {
   display: flex;
   justify-content: space-between;
   padding: 18px 28px;
   background: #0f1513;
-  border-bottom: 1px solid #1e2a26;
+  border-bottom: 1px solid #1b2a25;
 }
 
-.brand {
-  font-weight: bold;
+.logo {
+  font-weight: 600;
   letter-spacing: 1px;
 }
 
 .nav a {
   margin-left: 16px;
-  color: #b7c7c1;
+  color: #b9c7c2;
   text-decoration: none;
   font-size: 14px;
 }
@@ -33,7 +33,12 @@ body {
 .hero {
   padding: 90px 28px;
   text-align: center;
-  border-bottom: 1px solid #1e2a26;
+  border-bottom: 1px solid #1b2a25;
+}
+
+.hero-inner {
+  max-width: 900px;
+  margin: auto;
 }
 
 .hero h1 {
@@ -41,16 +46,34 @@ body {
   margin-bottom: 12px;
 }
 
-.meta {
-  margin-top: 16px;
-  font-size: 13px;
-  color: #9fb3ac;
+.hero-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 30px;
+  gap: 10px;
+}
+
+.hero-metrics div {
+  background: #111916;
+  padding: 14px;
+  border: 1px solid #1b2a25;
+}
+
+.hero-metrics span {
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .section {
-  padding: 60px 28px;
+  padding: 70px 28px;
   max-width: 1000px;
   margin: auto;
+}
+
+.section.alt {
+  background: #0d1412;
+  border-top: 1px solid #1b2a25;
+  border-bottom: 1px solid #1b2a25;
 }
 
 .grid {
@@ -61,24 +84,44 @@ body {
 }
 
 .card {
+  background: #111916;
+  border: 1px solid #1b2a25;
   padding: 16px;
-  background: #111a17;
-  border: 1px solid #1f2d28;
 }
 
-.list {
-  margin-top: 16px;
-  padding-left: 18px;
+.steps {
+  display: grid;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.step {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 14px;
+  background: #111916;
+  border: 1px solid #1b2a25;
+}
+
+.icon {
+  width: 22px;
+  height: 22px;
+  opacity: 0.9;
+}
+
+.highlight-box {
+  display: flex;
+  gap: 12px;
+  padding: 14px;
+  background: #111916;
+  border: 1px solid #1b2a25;
+  margin-top: 20px;
 }
 
 .footer {
   text-align: center;
   padding: 30px;
-  border-top: 1px solid #1e2a26;
+  border-top: 1px solid #1b2a25;
   color: #7f9a92;
-}
-
-.note {
-  color: #9fb3ac;
-  font-size: 14px;
-}
+  }
