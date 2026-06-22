@@ -125,3 +125,9 @@ body {
   border-top: 1px solid #1b2a25;
   color: #7f9a92;
   }
+
+.icon {
+  width: 22px;
+  height: 22px;
+  stroke: #e7ecea;
+}
