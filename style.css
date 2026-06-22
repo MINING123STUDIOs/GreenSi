@@ -6,6 +6,7 @@ body {
   line-height: 1.6;
 }
 
+/* Header */
 .header {
   display: flex;
   justify-content: space-between;
@@ -30,6 +31,7 @@ body {
   color: #ffffff;
 }
 
+/* Hero */
 .hero {
   padding: 90px 28px;
   text-align: center;
@@ -64,6 +66,7 @@ body {
   font-weight: bold;
 }
 
+/* Sections */
 .section {
   padding: 70px 28px;
   max-width: 1000px;
@@ -76,6 +79,7 @@ body {
   border-bottom: 1px solid #1b2a25;
 }
 
+/* Grids */
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -83,12 +87,14 @@ body {
   margin-top: 20px;
 }
 
+/* Cards */
 .card {
   background: #111916;
   border: 1px solid #1b2a25;
   padding: 16px;
 }
 
+/* Steps */
 .steps {
   display: grid;
   gap: 16px;
@@ -104,13 +110,24 @@ body {
   border: 1px solid #1b2a25;
 }
 
+/* ICON SYSTEM (IMPORTANT FIX) */
 .icon {
   width: 22px;
   height: 22px;
-  opacity: 0.9;
-  stroke: #e7ecea; 
+
+  /* This is the key fix */
+  color: #e7ecea;
+
+  flex-shrink: 0;
 }
 
+/*
+  Ensure SVGs respect this:
+  - stroke="currentColor"
+  - fill="none"
+*/
+
+/* Highlight boxes */
 .highlight-box {
   display: flex;
   gap: 12px;
@@ -120,9 +137,24 @@ body {
   margin-top: 20px;
 }
 
+/* Contact */
+.contact-box {
+  display: flex;
+  gap: 12px;
+  padding: 14px;
+  background: #111916;
+  border: 1px solid #1b2a25;
+}
+
+/* Footer */
 .footer {
   text-align: center;
   padding: 30px;
   border-top: 1px solid #1b2a25;
   color: #7f9a92;
-  }
+}
+
+/* Optional: improve text contrast slightly for readability */
+p {
+  color: #d7e0dc;
+} 
