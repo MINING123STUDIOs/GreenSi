@@ -1,16 +1,106 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenSi</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <h1>Hello</h1>
-  <p>This is my static website!</p>
 
-  <button onclick="sayHello()">Click me</button>
+  <header class="topbar">
+    <div class="brand">GreenSi</div>
+    <nav class="nav">
+      <a href="#overview">Overview</a>
+      <a href="#operations">Operations</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#governance">Governance</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-  <script src="script.js"></script>
+  <section class="hero">
+    <h1>Industrial Systems. High Reliability. Full Traceability.</h1>
+    <p>
+      A vertically integrated technology federation producing mission-critical components,
+      materials, and systems for aerospace, defense, infrastructure, and advanced research.
+    </p>
+    <div class="meta">
+      Founded 1948 · Munich · State subsidized · 57,000 employees
+    </div>
+  </section>
+
+  <section id="overview" class="section">
+    <h2>Overview</h2>
+    <p>
+      GreenSi is a private technology federation operating across Europe and Asia,
+      specializing in high-reliability manufacturing across electronic, mechanical,
+      thermal, and materials systems. All production is made-to-order with full
+      traceability and auditability.
+    </p>
+  </section>
+
+  <section id="operations" class="section">
+    <h2>Manufacturing Model</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>ISO 1 Environment</h3>
+        <p>6N argon-controlled fabrication environments for ultra-clean processing.</p>
+      </div>
+
+      <div class="card">
+        <h3>Make-to-Order System</h3>
+        <p>No inventory. Every component is produced per contract specification.</p>
+      </div>
+
+      <div class="card">
+        <h3>Production Pipeline</h3>
+        <p>Manufacturing → Measurement → Binning → Post-Binning Procedure (PBP)</p>
+      </div>
+
+      <div class="card">
+        <h3>Traceability</h3>
+        <p>All production data is retained, auditable, and contract-linked.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="section">
+    <h2>Core Domains</h2>
+
+    <ul class="list">
+      <li>Semiconductor components & substrates</li>
+      <li>Industrial chemicals & raw materials</li>
+      <li>Precision systems engineering</li>
+      <li>Custom manufactured parts & tooling</li>
+      <li>Infrastructure-grade electrical and thermal systems</li>
+    </ul>
+  </section>
+
+  <section id="governance" class="section">
+    <h2>Governance & Leadership</h2>
+
+    <p><strong>CEO:</strong> Paul Hertz</p>
+    <p><strong>Supervision:</strong> Maddison Thomson</p>
+    <p><strong>CFO:</strong> Lin Hsiao</p>
+
+    <p class="note">
+      GreenSi operates under a low-leverage, high-reinvestment model to support
+      long-cycle R&D and infrastructure stability.
+    </p>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Industrial contracts and institutional inquiries only.</p>
+    <p>Email: contact@greensigroup.example</p>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 GreenSi Federation. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
